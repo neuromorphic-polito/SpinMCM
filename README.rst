@@ -33,7 +33,7 @@ SpinMCM is being developed by `Francesco Barchi <mailto:francesco.barchi@polito.
 +------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | .. image:: https://user-images.githubusercontent.com/7613428/60581999-4168a180-9d88-11e9-87e3-ce5e127b84a1.png   | SpinMCM is free and open source software, so you can use it for any purpose, free of charge.                       |
 |    :alt: Respect the license                                                                                     | However, certain conditions apply when you (re-)distribute and/or modify SpinMCM; please respect the               |
-|    :target: https://github.com/neuromorphic-polito/SpinMCM/blob/master/LICENSE.rst                               | `license <https://github.com/neuromorphic-polito/SpinMCM/blob/master/LICENSE.rst>`__.                            |
+|    :target: https://github.com/neuromorphic-polito/SpinMCM/blob/master/LICENSE.rst                               | `license <https://github.com/neuromorphic-polito/SpinMCM/blob/master/LICENSE.rst>`__.                              |
 |    :width: 76px                                                                                                  |                                                                                                                    |
 +------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
