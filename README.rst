@@ -1,5 +1,5 @@
-SpinMCM: Multicast Messaging for SpiNNaker
-------------------------------------------
+SpinMCM: Multicast Communication Middleware for SpiNNaker
+---------------------------------------------------------
 
 SpinMCM is a library providing an interface for performing broadcast transmissions among the cores of the SpiNNaker neuromorphic platform. It also implements a synchronisation mechanism among the cores. Both Broadcast and Sync functionalities are implemented by exploiting the multicast capabilities of the board.
 
