@@ -14,7 +14,7 @@
 // ==========================================================================
 // Autor: Francesco Barchi <francesco.barchi@polito.it>
 // ==========================================================================
-// SpinMCM.cpp: Main File for SpinMCM
+// spin2_api.h: Main header File for SpinMCM
 // ==========================================================================
 
 #ifndef __SPIN2_API_H__

@@ -14,7 +14,7 @@
 // ==========================================================================
 // Autor: Francesco Barchi <francesco.barchi@polito.it>
 // ==========================================================================
-// SpinMCM.cpp: Main File for SpinMCM
+// spin2_mc.c: Multicast communication functions for SpinMCM
 // ==========================================================================
 
 #include "_spin2_api.h"

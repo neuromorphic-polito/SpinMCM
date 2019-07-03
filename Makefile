@@ -14,7 +14,7 @@
 # ==========================================================================
 # Autor: Francesco Barchi <francesco.barchi@polito.it>
 # ==========================================================================
-# SpinMCM.cpp: Main File for SpinMCM
+# Makefile: Build and Installation of the C libraries for SpinMCM
 # ==========================================================================
 
 # If SPINN_DIRS is not defined, this is an error!
