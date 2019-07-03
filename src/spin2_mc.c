@@ -1,3 +1,22 @@
+// ==========================================================================
+//                                  SpinMCM
+// ==========================================================================
+// This file is part of SpinMCM.
+//
+// SpinMCM is Free Software: you can redistribute it and/or modify it
+// under the terms found in the LICENSE[.md|.rst] file distributed
+// together with this file.
+//
+// SpinMCM is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+//
+// ==========================================================================
+// Autor: Francesco Barchi <francesco.barchi@polito.it>
+// ==========================================================================
+// SpinMCM.cpp: Main File for SpinMCM
+// ==========================================================================
+
 #include "_spin2_api.h"
 
 #define MASK_SHIFT_R(v, m, s) (((v) & (m)) >> (s))
