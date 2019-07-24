@@ -2,7 +2,7 @@ Name: SpinMCM
 Author: Francesco Barchi <francesco.barchi@polito.it>
 Maintainer1: Francesco Barchi <francesco.barchi@polito.it>
 Maintainer2: Evelina Forno <evelina.forno@polito.it>
-License: AGPL v3
+License: LGPL v3
 Copyright: 2016-2019, Francesco Barchi; 2016-2019 Gianvito Urgese, Politecnico di Torino
 Status: under development
 Description: SpinMCM is a library providing an interface for performing broadcast transmissions among the cores of the SpiNNaker neuromorphic platform.
