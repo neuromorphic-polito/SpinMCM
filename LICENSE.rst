@@ -14,7 +14,7 @@ SpinMCM is distributed in the hope that it will be useful,
 but **without any warranty**; without even the implied warranty of
 **merchantability** or **fitness for a particular purpose**.
 
-See the file `LICENSE-LGPL3.rst <./LICENSE-AGPL3.rst>`__ or
+See the file `LICENSE-LGPL3.rst <./LICENSE-LGPL3.rst>`__ or
 http://www.gnu.org/licenses/ for a full text of the license and the
 rights and obligations implied.
 
