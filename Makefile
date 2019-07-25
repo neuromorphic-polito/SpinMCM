@@ -1,22 +1,3 @@
-# ==========================================================================
-#                                  SpinMCM
-# ==========================================================================
-# This file is part of SpinMCM.
-#
-# SpinMCM is Free Software: you can redistribute it and/or modify it
-# under the terms found in the LICENSE[.md|.rst] file distributed
-# together with this file.
-#
-# SpinMCM is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-#
-# ==========================================================================
-# Autor: Francesco Barchi <francesco.barchi@polito.it>
-# ==========================================================================
-# Makefile: Build and Installation of the C libraries for SpinMCM
-# ==========================================================================
-
 # If SPINN_DIRS is not defined, this is an error!
 ifndef SPINN_DIRS
     $(error SPINN_DIRS is not set. Please define SPINN_DIRS (possibly by running "source setup" in the spinnaker tools folder))
@@ -31,7 +12,7 @@ include $(SPINN_DIRS)/make/Makefile.common
 CFLAGS += -I include $(OTIME) # -D$(SPINN_COMMON_DEBUG)
 
 # Objects
-OBJS = spin2_ht.o spin2_mc.o spin2_sdp.o
+OBJS = spin2_ht.o spin2_mc.o spin2_sdp.o spin2_metrics.o
 BUILD_OBJS = $(OBJS:%.o=$(SPINN_TWO_BUILD)/%.o)
 
 # Headers

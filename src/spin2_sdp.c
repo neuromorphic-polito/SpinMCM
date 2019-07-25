@@ -1,30 +1,32 @@
-// ==========================================================================
-//                                  SpinMCM
-// ==========================================================================
-// This file is part of SpinMCM.
-//
-// SpinMCM is Free Software: you can redistribute it and/or modify it
-// under the terms found in the LICENSE[.md|.rst] file distributed
-// together with this file.
-//
-// SpinMCM is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-//
-// ==========================================================================
-// Autor: Francesco Barchi <francesco.barchi@polito.it>
-// ==========================================================================
-// spin2_sdp.c: SDP callback functions for SpinMCM
-// ==========================================================================
-
 #include "_spin2_api.h"
 
+
+// --- Local Prototypes ---
+
+void _spin2_sdp_callback(uint mailbox, uint port);
+
+
 // --- Local Variables ---
+
 static callback_t _spinn2_sdp_callback[SPIN2_SDP_PORTS] = {NULL};
 
 
-// --- Functions ---
-void spin2_sdp_callback(uint mailbox, uint port) {
+// --- Global function ---
+
+void spin2_sdp_init(){
+  uint cpsr;
+
+  cpsr = cpu_int_disable();
+  spin1_callback_on(SDP_PACKET_RX, _spin2_sdp_callback, 0);
+  cpu_int_restore(cpsr);
+
+  return;
+}
+
+
+// --- Local Function ---
+
+void _spin2_sdp_callback(uint mailbox, uint port) {
   if (_spinn2_sdp_callback[port] != NULL) {
     _spinn2_sdp_callback[port](mailbox, port);
   }
@@ -35,10 +37,12 @@ void spin2_sdp_callback(uint mailbox, uint port) {
   return;
 }
 
+
 bool spin2_sdp_callback_on(uint sdp_port, callback_t callback) {
   _spinn2_sdp_callback[sdp_port] = callback;
   return true;
 }
+
 
 bool spin2_sdp_callback_off(uint sdp_port) {
   _spinn2_sdp_callback[sdp_port] = NULL;
